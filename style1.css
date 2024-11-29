@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1F2022;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin-right: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    font-size: 18px;
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #f57c00;
+}
+
+.menu-icono {
+    display: none;
+}
+
+.menu-icono img {
+    width: 30px;
+    height: 30px;
+}
+
+/*Forma adaptativa */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icono {
+        display: block;
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.busqueda {
+    background-color: #f57c00; /* Fondo naranja para la barra de búsqueda */
+    padding: 40px 0; /* Espaciado arriba y abajo */
+    display: flex;
+    justify-content: center; /* Centra la barra horizontalmente */
+    align-items: center; /* Centra la barra verticalmente */
+}
+
+.busq1 {
+    text-align: center;
+    max-width: 1000px; /* Máximo ancho para evitar que se expanda demasiado */
+    width: 100%; /* La barra de búsqueda ocupará el 100% del espacio disponible */
+}
+
+.busq1 h2 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Espacio entre el título y la barra de búsqueda */
+    color: #fff; /* Color blanco para el texto */
+}
+
+.barrabusqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* La barra de búsqueda ocupará el 80% del espacio disponible */
+    max-width: 800px; /* Maximo ancho de la barra de búsqueda */
+    margin: 0 auto; /* Asegura que la barra esté centrada */
+}
+
+.barrabusqueda input {
+    padding: 12px 20px; /* Espaciado dentro del campo de texto */
+    font-size: 16px;
+    width: 75%; /* El campo de texto ocupará el 75% del espacio de la barra */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Espacio entre el campo de texto y el botón */
+    transition: all 0.3s ease;
+}
+
+.barrabusqueda input:focus {
+    outline: none;
+    border-color: #fff; /* Cambia el borde a blanco al enfocar el campo */
+}
+
+.barrabusqueda button {
+    padding: 12px 20px;
+    background-color: #808080; /* Color gris para el botón */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.barrabusqueda button:hover {
+    background-color: #6e6e6e; /* Gris más oscuro al pasar el ratón */
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2c2c2c; /* Fondo claro para la página */
+    color: #333; /* Texto oscuro para buena legibilidad */
+}
+
+
+header {
+    background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%; /* Padding para dar espacio dentro del contenedor */
+    /* Fondo blanco eliminado para que se vea el gris */
+}
+
+
+.header-txt {
+    max-width: 500px; /* Limita el ancho del texto */
+}
+
+.header-txt h1 {
+    font-size: 3.5rem; /* Tamaño grande para el título */
+    font-weight: 700;
+    color: #fff; /* Color blanco para el título */
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.header-txt p {
+    font-size: 1.2rem;
+    color: #7c7c7c; /* Gris más oscuro para el párrafo */
+    margin-bottom: 40px; /* Espacio debajo del párrafo */
+}
+
+.btn {
+    padding: 12px 30px;
+    background-color: #ff7838; /* Naranja suave para el botón */
+    color: #fff; /* Texto blanco en el botón */
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e6612b; /* Naranja más oscuro al pasar el ratón */
+}
+
+.header-img {
+    flex-basis: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-img img {
+    max-width: 100%; /* Hace que la imagen sea responsiva */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2c2c2c; /* Fondo claro para la página */
+    color: #333; /* Texto oscuro para buena legibilidad */
+}
+
+.food-container {
+    padding: 80px 10%; /* Espaciado similar a la cabecera */
+    background-color: #000000; /* Fondo naranja para el contenedor del video */
+    text-align: center; /* Centrar contenido dentro de la sección */
+
+}
+
+.food-container h2 {
+    font-size: 2.5rem; /* Tamaño grande para el título */
+    color: #fff; /* Color blanco para el título */
+    margin-bottom: 30px; /* Espacio debajo del título */
+    font-weight: 600; /* Negrita */
+}
+
+.destacado-container {
+    display: flex;               /* Usamos flexbox para alinear la imagen y el contenido */
+    justify-content: space-between; /* Espacia los elementos de manera equitativa */
+    align-items: center;         /* Centra los elementos verticalmente */
+    padding: 50px 10%;           /* Añade espacio alrededor del contenido */
+    background-color: #f5f5f5;   /* Fondo suave gris */
+}
+
+.destacado-img {
+    flex-basis: 45%;              /* La imagen ocupará el 45% del contenedor */
+    display: flex;                /* Asegura que la imagen esté centrada en su contenedor */
+    justify-content: center;      /* Centra la imagen horizontalmente */
+}
+
+.destacado-img img {
+    max-width: 100%;               /* Hace que la imagen sea responsiva */
+    height: auto;                  /* Mantiene la proporción de la imagen */
+    border-radius: 8px;            /* Bordes redondeados para la imagen */
+}
+
+.destacado-txt {
+    flex-basis: 50%;               /* El texto ocupará el 50% del espacio disponible */
+    padding: 20px;                 /* Añade un poco de espacio interno */
+    text-align: left;              /* Alinea el texto a la izquierda */
+}
+
+.destacado-txt span {
+    font-size: 1.2rem;
+    color: #ff7838;                /* Color naranja para el precio */
+    font-weight: bold;
+}
+
+.destacado-txt h2 {
+    font-size: 2rem;               /* Tamaño grande para el título */
+    color: #333;                   /* Color oscuro para el texto */
+    margin: 10px 0;                /* Espacio entre el precio y el título */
+}
+
+.destacado-txt p {
+    font-size: 1rem;               /* Tamaño de fuente estándar */
+    color: #777;                   /* Gris oscuro para el texto */
+    margin-bottom: 20px;           /* Espacio debajo del párrafo */
+}
+
+.destacado-txt .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff7838;    /* Naranja para el fondo del botón */
+    color: white;                  /* Color blanco para el texto */
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;           /* Bordes redondeados */
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.destacado-txt .btn:hover {
+    background-color: #e6612b;     /* Naranja más oscuro al pasar el ratón */
+}
+
+
+
+.food-container video {
+    width: 100%; /* El video ocupará el 100% del ancho disponible */
+    max-width: 1000px; /* Máximo ancho de 1000px para evitar que sea demasiado grande */
+    border-radius: 8px; /* Bordes redondeados para el video */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del video */
+}
+
+@media screen and (max-width: 768px) {
+    /* Ajustes para pantallas más pequeñas */
+    .food-container {
+        padding: 60px 5%; /* Menos padding en pantallas pequeñas */
+    }
+
+    .food-container h2 {
+        font-size: 2rem; /* Tamaño de fuente más pequeño */
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------
+
+h2 {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    font-size: 2rem; /* Tamaño de la fuente */
+    color: #ffffff; /* Color del texto */
+    margin-bottom: 20px; /* Espaciado debajo del encabezado */
+}
+
+.producto-container {
+    text-align: center; /* Centra el título */
+    margin: 40px 0; /* Espaciado superior e inferior */
+}
+
+.producto-imagenes {
+    display: flex; /* Usamos flexbox para alinearlas horizontalmente */
+    justify-content: space-between; /* Distribuye las imágenes con espacio entre ellas */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten a nuevas filas en pantallas pequeñas */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-bottom: 20px; /* Espacio debajo de las imágenes */
+    padding: 80px 10%;
+}
+
+.producto-imagenes img {
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    max-width: 250px; /* Limitamos el ancho máximo de las imágenes */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra sutil a las imágenes */
+    transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.producto-imagenes img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+}
+
+h2 {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    font-size: 2rem; /* Tamaño de la fuente */
+    color: #ffffff; /* Color del texto */
+    margin-bottom: 20px; /* Espaciado debajo del encabezado */
+}
+
+-------------------------------------------------------------------------------------
+.container {
+    display: flex;
+    justify-content: center;   /* Centra el contenido horizontalmente */
+    align-items: center;       /* Centra el contenido verticalmente */
+    padding: 20px;             /* Espaciado interno */
+    border-radius: 8px;        /* Bordes redondeados */
+}
+
+.footer {
+    background-color: #e6612b; /* Fondo oscuro para el pie de página */
+    color: #fff;            /* Color de texto blanco */
+    padding: 40px 0;        /* Espaciado interno */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Máximo ancho para el pie de página */
+    margin: 0 auto;    /* Centra el contenedor en la página */
+}
+
+.footerinfo {
+    width: 30%;  /* Cada sección ocupará el 30% del ancho */
+    padding: 0 20px; /* Espaciado dentro de las secciones */
+}
+
+.footerinfo h3 {
+    font-size: 1.2rem; /* Tamaño de fuente para los encabezados */
+    margin-bottom: 15px; /* Espacio debajo de los títulos */
+}
+
+.footerinfo ul {
+    list-style: none;   /* Elimina los puntos de las listas */
+    padding: 0;
+}
+
+.footerinfo ul li {
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+}
+
+.footerinfo ul li a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #fff;           /* Color blanco para los enlaces */
+    font-size: 1rem;       /* Tamaño de fuente para los enlaces */
+}
+
+.footerinfo ul li a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+
+.footerinfo p {
+    font-size: 0.9rem;
+    text-align: center;  /* Centra el texto */
+    margin-top: 20px;     /* Espacio superior */
+}
+
+----------------------------------------------------------------
+
+.footer2 {
+    background-color: #000; /* Fondo negro */
+    width: 100%;             /* Asegura que el footer ocupe todo el ancho */
+    padding: 80px 0;         /* Espaciado arriba y abajo */
+    display: flex;           /* Usamos Flexbox para centrar el contenido */
+}
+
+.footer-container2 {
+    background-color: #000000;  /* Fondo gris oscuro para el contenedor */
+    color: white;            /* Texto blanco dentro del contenedor */
+    display: flex;
+    justify-content: center;   /* Centra el contenido horizontalmente */
+    align-items: center;       /* Centra el contenido verticalmente */
+    padding: 20px;             /* Espaciado interno */
+    width: 100%;              /* El contenedor ocupa todo el ancho disponible */
+}
